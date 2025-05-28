@@ -23,7 +23,7 @@
 const std = @import("std");
 
 // We'll use an enum to specify the character role.
-const Role = enum([10]u32) {
+const Role = enum(u32) {
     wizard,
     thief,
     bard,

@@ -71,7 +71,7 @@
 const std = @import("std");
 
 pub fn main() !void {
-    const count = 1_000_000_000_00;
+    const count = 1_000_000_000;
     var pi_plus: f64 = 0;
     var pi_minus: f64 = 0;
 

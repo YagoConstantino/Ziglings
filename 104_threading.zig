@@ -90,14 +90,14 @@ pub fn main() !void {
     // end of the program.
     {
         // Now we start the first thread, with the number as parameter
-        const handle = try std.Thread.spawn(.{}, thread_function, .{8});
+        const handle = try std.Thread.spawn(.{}, thread_function, .{1});
 
         // Waits for the thread to complete,
         // then deallocates any resources created on `spawn()`.
         defer handle.join();
 
         // Second thread
-        const handle2 = try std.Thread.spawn(.{}, thread_function, .{5}); // that can't be right?
+        const handle2 = try std.Thread.spawn(.{}, thread_function, .{2}); // that can't be right?
         defer handle2.join();
 
         // Third thread

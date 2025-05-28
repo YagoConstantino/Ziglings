@@ -30,7 +30,7 @@ pub fn main() !void {
     const file = try output_dir.openFile("zigling.txt", .{});
     defer file.close();
 
-    try file.seekTo(0);
+    //try file.seekTo(0);
     // initialize an array of u8 with all letter 'A'
     // we need to pick the size of the array, 64 seems like a good number
     // fix the initialization below
